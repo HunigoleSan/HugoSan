@@ -1,0 +1,183 @@
+*{padding: 0px;margin: 0px; box-sizing: border-box;}
+html{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    scroll-behavior: smooth;
+
+}
+a,img{text-decoration: none;display: block;}
+img{object-fit: cover;}
+input{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.p-normal{padding: 1rem;}
+.p-small{padding: .5rem;}
+.p-large{padding: 2rem;}
+.p-x-medium{padding-left: 1.5rem; padding-right: 1.5rem;}
+.p-y-small{padding-top: .5rem; padding-bottom: .5rem;}
+
+.success-message,
+.error-message{
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    top: 16px;
+    padding: 8px 11px;
+    text-align: center;
+    box-shadow: 0px 20px 25px -15px rgba(0,0,0,50%);
+}
+.text-black{color: var(--text-color-black);}
+.text-center{text-align: center;}
+.success-message{background: rgb(64, 156, 64);}
+.error-message{background: rgb(255, 86, 86);}
+
+.message-show-animation-forwards{
+    animation: messageScaleAnimationforwards 4s ease forwards;
+}
+.message-show-animation-static{
+    animation: messageScaleAnimationStatic 4s ease;
+}
+@keyframes messageScaleAnimationforwards {
+    0%{
+        transform: scale(.5);
+    }
+    10%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes messageScaleAnimationStatic {
+    0%{
+        transform: scale(.5);
+    }
+    10%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.bg-blue{
+    background: var(--link-blue);
+}
+.btn{padding: 8px 11px;border-radius: 6px;outline: none;border:0px;cursor: pointer; text-align: center;}
+.btn-blue{background: var(--btn-blue); color: white;}
+.btn-border-blue{ border: 1px solid var(--btn-blue); color: var(--link-blue);}
+
+.link{padding: 4px; color: white;}
+.link-blue{color: var(--link-blue);}
+.bg-green{background: #1ac52c;}
+.radius{
+    border-radius: 6px;
+}
+.g-medium{gap: 1.5rem;}
+.g-normal{gap: 1rem;}
+.g-small{gap: .5rem;}
+.g-large{gap: 2rem;}
+.g-5px{gap: 5px;}
+.g-10px{gap: 10px;}
+.g-56px{gap:56px;}
+
+.flex{display: flex;}
+.block{display: block;}
+.align-center{align-items: center;}
+.align-start{align-items: center;}
+.justify-start{justify-content: end;}
+.justify-end{justify-content: end;}
+.flex-wrap{flex-wrap: wrap;}
+
+.flex-justify-align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-justify-right{
+    display: flex;
+    justify-content: right;
+}
+
+.flex-align-center{
+    display: flex;
+    align-items: center;
+}
+.flex-align-end{
+    display: flex;
+    align-items: end;
+}
+.flex-justify-center-direction{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.flex-justify-align-center-direction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-align-center-direction{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-direction{
+    display: flex;
+    flex-direction: column;
+}
+.flex-full{flex: 1;}
+.line{background: var(--line-bg-black); height: 1px; width: 100%;}
+.width-regular{width: 50%;}
+.width-full{width: 100%;}
+
+.input-mobile{
+    padding: 8px 0px;
+    border: 0px;
+    outline: none;
+    background: transparent;
+}
+.border-all-black{
+    border:1px solid var(--border-black);
+    border-radius: 6px;
+    padding: 0px 8px;
+}
+.w-regular{font-weight: 400;}
+.w-medium{font-weight: 500;}
+.w-semi-bold{font-weight: 600;}
+.w-bold{font-weight: 700;}
+.fz-15{font-size: 15px;}
+.fz-14{font-size: 14px;}
+.fz-13{font-size: 13px;}
+.fz-11{font-size: 11px;}
+
+.relative{position: relative;}
+.absolute{position: absolute;}
+
+.index-1{z-index: 1;}
+.index-2{z-index: 2;}
+.index-3{z-index: 3;}
+.index-4{z-index: 4;}
+
+@media (width >= 500px) {
+    .fz-16{font-size: 16px;}
+}

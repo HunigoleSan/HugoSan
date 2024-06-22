@@ -1,0 +1,49 @@
+.header-vector{
+    top: -28px;
+    left: -31px;
+    
+}
+.header-vector-row-2{
+    top: -56px;
+    left: -62px;
+}
+.header-vector-bottom-right-row1{
+    right: -31px !important;
+    bottom: -28px !important;
+}
+.header-vector-bottom-right-row2{
+    right: -62px !important;
+    bottom: -56px !important;
+}
+/* VECTOR CARD PROYECT */
+.card-vector-border-top-left{
+    top: -23px;
+    left: -23px;
+}
+.card-vector-border-bottom-left{
+    bottom: -23px;
+    left: -23px;
+}
+.card-vector-border-back-middle-right{
+    top: 50%;
+    right: -10px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.card-vector-border-front-middle-right{
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+}
+@media (width <= 820px){
+    /* .header-vector{
+        left: unset;
+        top: -160px;
+        right: 202px;
+        transform: rotateZ(90deg);
+        z-index: -1;
+    }
+    .header-vector-row-2{
+        right: 132px;
+    } */
+}
