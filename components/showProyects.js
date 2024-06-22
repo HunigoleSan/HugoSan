@@ -18,8 +18,6 @@ window.addEventListener("DOMContentLoaded",function(){
                 iconSvgTecnologies += `</span>`
             }
         }
-        console.log(iconSvgTecnologies)
-
         let dataCard = {
             name_: nameProyect,
             img: dataProyects[key].img,
