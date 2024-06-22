@@ -212,10 +212,13 @@ body {
         flex-wrap: wrap;
     }
 }
-@media (width <= 670px) {
+@media (width <= 820px){
     .header__skills-dimentions{
         height: 50px;
     }
+}
+@media (width <= 670px) {
+    
     .header__skills-dimentions ~ p{
         font-size: 14px;
     }
@@ -227,10 +230,9 @@ body {
         padding-bottom: 1rem;
     }
 }
+
 @media (width <= 500px) {
-    .header__skills-dimentions{
-        height: 40px;
-    }
+    
     .header__skills-dimentions ~ p{
         font-size: 13px;
     }
