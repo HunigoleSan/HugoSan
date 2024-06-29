@@ -105,6 +105,20 @@ export const dataProyects={
         },
         link_web: "https://hunigolesan.github.io/Don-Detalle/",
         link_code:"https://github.com/HunigoleSan/Don-Detalle"
+    },
+    gestion_academica: {
+        name_ : "Gestión Académica",
+        filter: "Backend",
+        img: "gestion-academia.png",
+        tecnologies:{
+            github: "GitHub",
+            html5: "HTML5",
+            css3: "CSS3",
+            js: "JavaScript",
+            figma: "Figma",
+            php: "Php"
+        },
+        link_web: "https://gestionacademiabeta.000webhostapp.com/app/views/academia/index.php"
     }
 
 }
