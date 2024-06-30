@@ -115,6 +115,16 @@ body {
 /* CSS CARD PRODUCTS */
 .proyects{
     padding: 100px 1.5rem;
+    color: #151A44;
+}
+.proyects_title{
+    font-size: clamp(25px, 4vw, 35px);
+}
+.proyects_descripcion{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    max-width: 750px;
 }
 .cardProyects{
     max-width: 1440px;
