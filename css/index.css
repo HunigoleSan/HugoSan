@@ -243,7 +243,9 @@ body {
 }
 
 @media (width <= 500px) {
-    
+    .proyects {
+        padding: 2rem 1.5rem;
+    }
     .header__skills-dimentions ~ p{
         font-size: 13px;
     }
@@ -266,5 +268,8 @@ body {
     }
     nav > a > img {
         height: 40px;
+    }
+    .proyects {
+        padding: 2rem 1rem;
     }
 }
