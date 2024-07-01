@@ -111,6 +111,7 @@ body {
 }
 .photo{
     user-select: none;
+    opacity: .8;
 }
 /* CSS CARD PRODUCTS */
 .proyects{
