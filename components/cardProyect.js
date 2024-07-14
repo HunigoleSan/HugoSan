@@ -1,6 +1,17 @@
-export function cardComponent(data) {
-    let iconCodeExists = data.link_code ?? false;
-    let iconhtml = "";
+
+function imageVectorByDesignCardCode(){
+    let imgVector = `
+        <img class="card-vector-border-top-left absolute" src="img/vector/card-product-vector-border-top-left.png" alt="Vector FBOH Card proyectos">
+        <img class="card-vector-border-bottom-left absolute" src="img/vector/card-product-vector-border-bottom-left.png" alt="Vector FBOH Card proyectos">
+        <img class="card-vector-border-back-middle-right absolute" src="img/vector/card-product-vector-back-middle-right.png" alt="Vector FBOH Card proyectos">
+        <img class="card-vector-border-front-middle-right absolute index-3" src="img/vector/card-producto-vector-front-middle-right.png" alt="Vector FBOH Card proyectos">
+    `
+    return imgVector
+}
+function designCardCode (data){
+    let iconCodeExists = data.link_code ?? false,
+        iconhtml = ""
+    let imgVector = imageVectorByDesignCardCode()
     if(iconCodeExists){
         iconhtml = `
         <a class="visit_web visit_web-code flex-justify-align-center g-5px" href="${data.link_code}">
@@ -12,13 +23,10 @@ export function cardComponent(data) {
         `
     }
     let card = `
-        <div class="card relative">
-            <img class="card-vector-border-top-left absolute" src="img/vector/card-product-vector-border-top-left.png" alt="Vector FBOH Card proyectos">
-            <img class="card-vector-border-bottom-left absolute" src="img/vector/card-product-vector-border-bottom-left.png" alt="Vector FBOH Card proyectos">
-            <img class="card-vector-border-back-middle-right absolute" src="img/vector/card-product-vector-back-middle-right.png" alt="Vector FBOH Card proyectos">
-            <img class="card-vector-border-front-middle-right absolute index-3" src="img/vector/card-producto-vector-front-middle-right.png" alt="Vector FBOH Card proyectos">
+        <article class='card relative animation-appearance-card'>
+            ${imgVector}
             <p class="fz-16 absolute card-title index-3 w-medium">${data.name_}</p>
-            <div id="tecnogolies" class="flex-justify-align-center-direction absolute  index-3 g-10px fz-15">
+            <div id="tecnogolies" class="flex-justify-align-center-direction absolute index-3 g-10px fz-15">
                 ${data.icons}
             </div>
             <div class="relative overflow-hidden index-2">
@@ -44,7 +52,26 @@ export function cardComponent(data) {
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     `
-    return card
+    return card;
+}
+function designCardUxUi (data){
+    let html = `
+        <article id="${data.id}" class='card-design radius relative'>
+            <img src='img/figma/${data.img.banner}'/>
+            <div class='layer absolute index-3 flex-direction justify-end'>
+                <p class='layer-title'>${data.title}</p>
+                <p class='layer-autor'>HugoSan</p>
+            </div>
+        </article>
+    `
+    return html
+}
+export function cardProyect(data) {
+    if(data.filter == "design"){
+        return designCardUxUi(data)
+    }else{
+        return designCardCode(data)
+    }
 }
