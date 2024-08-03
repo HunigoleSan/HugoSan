@@ -3,9 +3,9 @@ body {background: #E1E5EE;}
 .presentation {
     width: 100%;
     min-height: 100vh;
-    padding: 24px;
+    padding: 3.7rem 1.5rem 7rem 1.5rem;
     color: #151A44;
-    overflow: hidden;
+    overflow-x: clip;
 }
 
 .header {
@@ -138,7 +138,7 @@ body {background: #E1E5EE;}
 .tab-hover:hover{background: linear-gradient(145deg, #E3BCF5, #C1C2F4);}
 
 .proyects{
-    padding: 100px 1.5rem;
+    padding: 1rem 1rem 5rem 1rem;
     color: #151A44;
 }
 .proyects_titl{font-size: clamp(25px, 4vw, 35px);}

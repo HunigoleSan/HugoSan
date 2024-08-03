@@ -89,3 +89,4 @@ window.addEventListener("DOMContentLoaded", function () {
         })
     })
 })
+getProyectByFilter("frontend")
