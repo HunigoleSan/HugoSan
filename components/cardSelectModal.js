@@ -1,5 +1,5 @@
 export function cardSelectModal(data){
-
+    console.log(data)
     let {name_,img} = data
     let html = `
         <div class="proyecto-modal width-full flex-justify-center">

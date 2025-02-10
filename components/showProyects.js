@@ -9,13 +9,31 @@ function renderTecnologiesProyect(proyectTecnologies) {
         if (iconTecnologies[keys]) {
             iconSvgTecnologies += `<span class="flex align-center g-5px w-medium relative icon-animation-hover">`
             iconSvgTecnologies += iconTecnologies[keys].icon
-            iconSvgTecnologies += `<span class='absolute icon-animation-show'>`
-            iconSvgTecnologies += iconTecnologies[keys].name_
+            iconSvgTecnologies += `<span class=''>`
+            iconSvgTecnologies += textColorForNameIcons(iconTecnologies[keys].name_)
             iconSvgTecnologies += `</span>`
             iconSvgTecnologies += `</span>`
         }
     }
     return iconSvgTecnologies;
+}
+
+function textColorForNameIcons(icon){
+    if(icon === "HTML5"){
+        return `<span class='text-orange'>${icon}</span>`
+    }else if(icon === "CSS3"){
+        return `<span class='text-blue'>${icon}</span>`
+    }else if(icon === "JavaScript"){
+        return `<span class='text-yellow'>${icon}</span>`
+    }else if(icon === "Figma"){
+        return `<span class='text-purple'>${icon}</span>`
+    }else if(icon ==="GitHub"){
+        return `<span class='text-grey'>${icon}</span>`
+    }else if(icon ==="PHP"){
+        return `<span class='text-blue-strong'>${icon}</span>`
+    }else{
+        return ""
+    }
 }
 
 function getProyectByFilter(filterCategory) {
@@ -26,13 +44,13 @@ function getProyectByFilter(filterCategory) {
             for (const key in proyects) {
                 let titleProyect = proyects[key].title,
                     proyectTecnologies = proyects[key].tecnologies,
-                    tecnologiesFound = renderTecnologiesProyect(proyectTecnologies)
+                    tecnologiesFound =  renderTecnologiesProyect(proyectTecnologies)
                 let data = {
                     id: proyects[key].id,
                     title: titleProyect,
                     name_: proyects[key].name_,
                     filter: filterCategory,
-                    img: proyects[key].img,
+                    img_presentation: proyects[key].img_presentation,
                     icons: tecnologiesFound,
                     link_web: proyects[key].link_web,
                     link_code: proyects[key].link_code
@@ -47,6 +65,7 @@ function getProyectByFilter(filterCategory) {
         console.log("No existe la categoria")
     }
 }
+
 function findByIdCardDesign(id){
     let cardProyects_HTML = document.getElementById("cardProyects")
     let cardSelect = dataProyects["design"][id]
@@ -67,10 +86,10 @@ function findByIdCardDesign(id){
 }
 
 function callCardDesign(){
-    let cardDesign_HTML = document.querySelectorAll(".card-design")
-    console.log(cardDesign_HTML)
+    let cardDesign_HTML = document.querySelectorAll(".design")
     cardDesign_HTML.forEach((card)=>{
         card.addEventListener("click",()=>{
+            
             findByIdCardDesign(card.id)
         })
     })

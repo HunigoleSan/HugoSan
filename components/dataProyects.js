@@ -1,8 +1,8 @@
-export const dataProyects={
-    frontend : {
+export const dataProyects = {
+    frontend :{
         github : {
             name_ : "GitHub",
-            img : "github.png",
+            img_presentation : "proyects/github.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
@@ -14,12 +14,12 @@ export const dataProyects={
         },
         form_validation: {
             name_ : "Course Registration Form",
-            img: "formcourse.png",
+            img_presentation: "proyects/formcourse.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
-                css3: "CSS3",
                 js: "JavaScript",
+                css3: "CSS3",
                 figma: "Figma"
             },
             link_web: "https://hunigolesan.github.io/form-validation-hunigole/",
@@ -28,12 +28,12 @@ export const dataProyects={
         siatmedia: {
             name_ : "Siatmedia",
             filter: "Frontend",
-            img: "siatmedia.png",
+            img_presentation: "proyects/siatmedia.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
-                css3: "CSS3",
                 js: "JavaScript",
+                css3: "CSS3",
                 figma: "Figma"
             },
             link_web: "https://hunigolesan.github.io/hugo-senati/senati/tarea1/app/views/home/index.html",
@@ -41,12 +41,12 @@ export const dataProyects={
         },
         don_detalle: {
             name_ : "Don Detalle",
-            img: "don-detalle.png",
+            img_presentation: "proyects/don-detalle.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
-                css3: "CSS3",
                 js: "JavaScript",
+                css3: "CSS3",
                 figma: "Figma"
             },
             link_web: "https://hunigolesan.github.io/Don-Detalle/",
@@ -56,12 +56,12 @@ export const dataProyects={
     backend:{
         gestion_academica: {
             name_ : "Gestión Académica",
-            img: "gestion-academia.png",
+            img_presentation: "proyects/gestion-academia.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
-                css3: "CSS3",
                 js: "JavaScript",
+                css3: "CSS3",
                 figma: "Figma",
                 php: "Php"
             },
@@ -73,6 +73,7 @@ export const dataProyects={
             id: "siatmedia",
             title: "Siatmedia",
             name_: "Siatmedia design web",
+            img_presentation:"figma/siatmedia-presentation.jpg",
             img:{
                 desktop: "siatmedia-desktop.jpg",
                 mobile: "siatmedia-mobile.jpg",
@@ -83,6 +84,7 @@ export const dataProyects={
             id: "mcreation",
             title: "MCreations",
             name_: "MCreations design web",
+            img_presentation:"figma/mcreation-presentation.png",
             img:{
                 desktop: "mcreation-desktop.png",
                 mobile: "mcreation-mobile.png",
@@ -94,7 +96,7 @@ export const dataProyects={
         summary_component: {
             name_ : "Summary",
             filter: "FrontendMentor",
-            img: "summary-component.png",
+            img_presentation: "proyects/summary-component.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
@@ -107,7 +109,7 @@ export const dataProyects={
         notification: {
             name_ : "Notification Page",
             filter: "FrontendMentor",
-            img: "notifications.png",
+            img_presentation: "proyects/notifications.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
@@ -120,7 +122,7 @@ export const dataProyects={
         time_tracking_dashboard: {
             name_ : "Time Tracking Dashboard",
             filter: "FrontendMentor",
-            img: "time-tracking.png",
+            img_presentation: "proyects/time-tracking.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",
@@ -133,7 +135,7 @@ export const dataProyects={
         launch_countdown_timer: {
             name_ : "Launch Countdown Timer",
             filter: "FrontendMentor",
-            img: "launch-countdown-timer.png",
+            img_presentation: "proyects/launch-countdown-timer.png",
             tecnologies:{
                 github: "GitHub",
                 html5: "HTML5",

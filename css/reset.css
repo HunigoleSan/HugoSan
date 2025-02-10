@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{padding: 0px;margin: 0px; box-sizing: border-box;}
 html{
     font-family: "Inter", sans-serif;
@@ -34,6 +35,14 @@ ul{
     box-shadow: 0px 20px 25px -15px rgba(0,0,0,50%);
 }
 .text-black{color: var(--text-color-black);}
+.text-orange{color: #FF8C5B}
+.text-blue{color: #1E85FF;}
+.text-blue-strong{color: #392fff}
+.text-yellow{color: #FFE816}
+.text-grey{color: #151A44}
+.text-purple{color: #8C95FD}
+
+
 .text-center{text-align: center;}
 .success-message{background: rgb(64, 156, 64);}
 .error-message{background: rgb(255, 86, 86);}
@@ -152,6 +161,7 @@ ul{
 .width-regular{width: 50%;}
 .width-full{width: 100%;}
 
+
 .input-mobile{
     padding: 8px 0px;
     border: 0px;
@@ -168,6 +178,7 @@ ul{
 .w-semi-bold{font-weight: 600;}
 .w-bold{font-weight: 700;}
 
+.fz-24{font-size: 24px;}
 .fz-15{font-size: 15px;}
 .fz-14{font-size: 14px;}
 .fz-13{font-size: 13px;}
